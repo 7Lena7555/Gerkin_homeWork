@@ -3,8 +3,8 @@ Feature: Testing
   @TestCase
     @automated
   Scenario Outline: Verify login functionality
-    Given "<home_page>" is opened
-    When user writes "<login>" and "<password>"
+    Given "https://lms.itca.if.ua/" is opened
+    When user writes "User1" and "cvbDFG"
     Then verify user is logged in
     Examples:
       | home_page | User1   | cvbDFG  |
